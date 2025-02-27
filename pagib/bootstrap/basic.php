@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belajar HTML - Semua Element</title>
-</head>
-<body>
-
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
     <h1>Belajar HTML - Semua Element</h1>
 
     <h3>Paragraf</h3>
@@ -27,7 +27,7 @@
     <hr>
 
     <h3>Gambar</h3>
-    <img src="file_gambar.jpg" alt="Contoh Gambar">
+    <img src="../html_component/file_gambar.jpg" alt="Contoh Gambar" class="img-fluid">
     <hr>
 
     <h3>List Tidak Berurutan (Unordered List)</h3>
@@ -47,8 +47,8 @@
     <hr>
 
     <h3>Tabel</h3>
-    <table border="1">
-        <tr>
+    <table class="table table-striped table-hover">
+        <tr class="table-primary">
             <th>Header 1</th>
             <th>Header 2</th>
         </tr>
@@ -57,13 +57,19 @@
             <td>Data 2</td>
         </tr>
         <tr>
-            <td>Data 3</td>
+            <td class="table-danger">Data 3</td>
             <td>Data 4</td>
         </tr>
     </table>
     <hr>
 
     <h3>Form</h3>
+
+    <div>
+        <label for="" class="form-label">Input</label>
+        <input type="text" class="form-control">
+    </div>
+    <hr>
     <form action="/submit" method="post">
         <label for="nama">Nama:</label>
         <input type="text" id="nama" name="nama"><br><br>
@@ -237,5 +243,9 @@
     <p>Lihat kode sumber untuk melihat komentar.</p>
     <hr>
 
-</body>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
 </html>
